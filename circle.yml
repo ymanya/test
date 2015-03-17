@@ -12,7 +12,7 @@ test:
     - echo "nothing to do in test."
 deployment:
   staging:
-    branch: .*
+    branch: /.*/
     commands:
       - cordova platforms add android
       - cordova build android
