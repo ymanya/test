@@ -1,18 +1,18 @@
 general:
-	artifacts:
-		- "platforms/android/ant-build/CordovaApp-debug.apk"
+  artifacts:
+    - "platforms/android/ant-build/CordovaApp-debug.apk"
 machine:
-	java:
-		version: openjdk7
+  java:
+    version: openjdk7
 dependencies:
-	override:
-		- npm install -g cordova
+  override:
+    - npm install -g cordova
 test:
-	override:
-		- echo "nothing to do in test."
+  override:
+    - echo "nothing to do in test."
 deployment:
-	staging:
-		branch: .*
-		commands:
-			- cordova platforms add android
-			- cordova build android
+  staging:
+    branch: .*
+    commands:
+      - cordova platforms add android
+      - cordova build android
