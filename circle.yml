@@ -5,7 +5,7 @@ machine:
   java:
     version: openjdk7
   environment:
-  	ANDROID_HOME: /usr/local/android-sdk-linux
+    ANDROID_HOME: /usr/local/android-sdk-linux
 dependencies:
   override:
     - npm install -g cordova
