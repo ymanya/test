@@ -7,7 +7,7 @@ machine:
 dependencies:
   override:
     - npm install -g cordova
-    - android update sdk -u
+    - android update sdk -u --no-ui
 test:
   override:
     - echo "nothing to do in test."
