@@ -4,10 +4,12 @@ general:
 machine:
   java:
     version: openjdk7
+  environment:
+  	ANDROID_HOME: /usr/local/android-sdk-linux
 dependencies:
   override:
     - npm install -g cordova
-    - android update sdk -u --no-ui
+    - echo y | android update sdk --no-ui --filter "android-21,build-tools-21.1.2"
 test:
   override:
     - echo "nothing to do in test."
