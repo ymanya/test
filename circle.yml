@@ -6,11 +6,7 @@ machine:
     version: openjdk7
   environment:
     ANDROID_HOME: /usr/local/android-sdk-linux
-    test: $CIRCLE_SHA
-dependencies:
-  override:
-    - npm install -g cordova
-    - echo y | android update sdk --no-ui --all --filter "android-21,build-tools-21.1.2"
+    test: $CIRCLE_SHA1
 test:
   override:
     - echo "nothing to do in test."
