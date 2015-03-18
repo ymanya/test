@@ -15,7 +15,7 @@ test:
     - echo "nothing to do in test."
 deployment:
   master:
-    branch: /.*/
+    branch: master
     commands:
       - echo "master"
   staging:
