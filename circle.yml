@@ -14,6 +14,10 @@ test:
   override:
     - echo "nothing to do in test."
 deployment:
+  master:
+    branch: /.*/
+    commands:
+      - echo "master"
   staging:
     branch: /.*/
     commands:
