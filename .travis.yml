@@ -1,0 +1,8 @@
+language: objective-c
+before_install:
+  - brew install node
+  - npm install -g cordova
+before_script:
+  - cordova create test-pj jp.co.testing.test test && cd test-pj && cordova platform add ios
+script:
+  - cordova build ios
