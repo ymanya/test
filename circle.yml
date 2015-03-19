@@ -18,7 +18,6 @@ deployment:
     branch: master
     commands:
       - echo $test
-      - echo $CI_PULL_REQUEST
   staging:
     branch: /.*/
     commands:
