@@ -1,6 +1,11 @@
 general:
   artifacts:
     - "platforms/android/ant-build/CordovaApp-debug.apk"
+checkout:
+  pre:
+    - echo "pre"
+  post:
+    - echo "post"
 machine:
   java:
     version: openjdk7
