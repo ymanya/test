@@ -18,8 +18,8 @@ deployment:
     branch: master
     commands:
       - echo $test
-        echo "2gyoume"
   staging:
     branch: /.*/
     commands:
       - echo $CIRCLE_BUILD_NUM
+        echo "2gyoume"
