@@ -7,6 +7,9 @@ machine:
   environment:
     ANDROID_HOME: /usr/local/android-sdk-linux
     test: $CIRCLE_SHA1
+dependencies:
+  override:
+    - echo "nothing to do in depend"
 test:
   override:
     - echo "nothing to do in test."
