@@ -15,8 +15,8 @@ deployment:
     branch: master
     commands:
       - echo $test
-      - echo $ANDROID_HOME
+      - echo $CI_PULL_REQUEST
   staging:
     branch: /.*/
     commands:
-      - echo $test
+      - echo $CI_PULL_REQUEST
