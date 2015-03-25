@@ -7,6 +7,13 @@ machine:
   environment:
     ANDROID_HOME: /usr/local/android-sdk-linux
     test: $CIRCLE_SHA1
+dependencies:
+  cache_directories:
+    - "/home/ubuntu/nvm/v0.10.33/lib/node_modules/"
+    - $JAVA_HOME
+  override:
+    - npm install -g cordova
+    - echo y | android update sdk --no-ui --all --filter "android-21,build-tools-21.1.2"
 test:
   override:
     - echo "nothing to do in test."
